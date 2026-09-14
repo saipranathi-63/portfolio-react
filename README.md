@@ -355,3 +355,6 @@ npm run dev
 ```
 
 Both servers should be running simultaneously during development.
+
+Demo of the project:
+https://drive.google.com/file/d/1ToEZbnENEWyJ3BFeSvDMzeQ35kNHMj2e/view?usp=sharing
