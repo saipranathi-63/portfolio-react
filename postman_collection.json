@@ -1,0 +1,145 @@
+{
+    "info": {
+        "_postman_id": "7c2d4a91-9e31-4b52-a8d7-portfolio",
+        "name": "Portfolio Backend API",
+        "description": "Postman collection for testing the Express backend of the personal portfolio project.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "http://localhost:5000"
+        }
+    ],
+    "item": [
+        {
+            "name": "Health Check",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        ""
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get All Projects",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/api/projects",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "api",
+                        "projects"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Project - Campus Connect",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/api/projects/campus-connect",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "api",
+                        "projects",
+                        "campus-connect"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Project - Invalid ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/api/projects/does-not-exist",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "api",
+                        "projects",
+                        "does-not-exist"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Submit Contact",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"Test User\",\n    \"email\": \"test@example.com\",\n    \"message\": \"Hello from Postman.\"\n}"
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/api/contact",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "api",
+                        "contact"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get All Contact Submissions",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/api/contact",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "api",
+                        "contact"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Unknown Route",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/api/unknown",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "api",
+                        "unknown"
+                    ]
+                }
+            }
+        }
+    ]
+}

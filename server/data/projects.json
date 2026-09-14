@@ -1,0 +1,26 @@
+[
+    {
+        "id": "campus-connect",
+        "title": "Campus Connect",
+        "description": "Developed a peer collaboration web platform using React for the front-end and Node.js for the backend logic. Implemented group-based interaction and information sharing features among students. Focused on component-based UI design, API integration, and clean code structure.",
+        "techStack": ["React", "Node.js"],
+        "image": null,
+        "link": "#"
+    },
+    {
+        "id": "bus-reservation",
+        "title": "Bus Reservation System",
+        "description": "Built a console-based bus reservation system using object-oriented design principles. Implemented ticket booking, cancellation, seat availability, and user management functionalities.",
+        "techStack": ["Java", "OOP"],
+        "image": null,
+        "link": "#"
+    },
+    {
+        "id": "brick-breaker",
+        "title": "Brick Breaker Game",
+        "description": "Developed a classic Brick Breaker game implementing game loop, collision detection, and scoring logic. Applied object-oriented principles with classes for ball, paddle, bricks, and game state management. Handled real-time user input and game state transitions effectively.",
+        "techStack": ["Java", "OOP"],
+        "image": null,
+        "link": "#"
+    }
+]
